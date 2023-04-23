@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Joe Kolodzik's Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<style>
+		/* add custom styles here */
+      .card{
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .card:hover{
+          opacity: 90%;
+          margin-top: -0.5em;
+          box-shadow: 0.5em 0.5em 0.2em #213242;
+          cursor: pointer;
+      }
+      .Media:hover{
+         width 25%;
+      }
+	</style>
+</head>
+<body>
+	<!-- Navigation bar -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark p-2">
+		<a class="navbar-brand" href="#">Joe Kolodzik's Portfolio</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#projects">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- About section -->
+	<section id="about" class="py-4">
+		<div class="container">
+			<div class="row">
+         	<div class="col-2">
+					<img src="Images/Profilephoto.jpg" class="rounded-circle" style="width: 100%" alt="Profile Image">
+				</div>
+				<div class="col-7">
+					<h2>Joe Kolodzik</h2>
+					<p>I an technology enthusiast a interest in networking, programming, web design, web development, UX/UI design, and project management. I am
+                  employed by Aspirus Inc as a end user computing technician. In my free time I enjoy going to the beach,
+                  gaming and learning new technologies.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Jumbotron
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container text-center">
+        <h1>Welcome to my Portfolio</h1>
+        <p class="lead">This is where you can see all of my works</p>
+      </div>
+    </div>
+    -->
+   <!-- Projects section -->
+   <section id="projects" class="bg-light py-4">
+      <div class="container">
+         <h2 class="mb-3">My Projects</h2>
+         <div class="row">
+            <div class="col-md-4">
+               <div class="card mb-4" data-bs-toggle="modal" data-bs-target="#phpmodal">
+                  <!-- Card Front -->
+                  <img class="card-img-top" src="Images/PeopleHelpingPeople.jpg" alt="Project Image">
+                  <div class="card-body">
+                     <h5 class="card-title">People Helping People</h5>
+                     <p class="card-text">Functional Prototype for volunteering.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="card mb-4">
+                  <img class="card-img-top" src="Images/CNMT210Final.jpg" alt="Project Image">
+                  <div class="card-body">
+                     <h5 class="card-title">CNMT210 Final</h5>
+                     <p class="card-text">HTML and CSS final assignment.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="card mb-4">
+                  <img class="card-img-top" src="Images/Portfolio.jpg" alt="Project Image">
+                  <div class="card-body">
+                     <h5 class="card-title">My Portfolio</h5>
+                     <p class="card-text">Personal WebPage Built with Bootstrap.</p>
+                  </div>
+               </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="phpmodal" style="display: none;" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="Card1">People Helping People</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <h6>Problem and Hypothesis</h6>
+                     <p>Problem: A agency that connects volunteers with those in need are looking for a website to automate the process.</br> 
+                     Hypothesis: Secure way for people to create requests and offer Help. Login, View/Offer, Request/Create</p>
+                     <h6>My Role</h6>
+                     <p>Design and Build a way for users to create requests and view their requests.</p>
+                     <h6>How We Developed a Solution</h6>
+                     <p>We came to our proposed solutions by utilizing user journeys and wire frame usability testing to get feedback from out class and professor.</br>
+                      I worked with 2 other developer/designers and we used a voting system for which ideas we would build and test.</p>
+                     <h6>How Our Solution Solves the Problem</h6> 
+                     <p>Our self service model allows people to connect on-line to request and offer aid.</p>
+                     <h6>Challenges faced</h6>
+                     <p> During ideation, we had designed a flow that involved a landing page but we found it unnecessary and caused delay in getting the user to the main content.</p>
+                     <h6>What I learned</h6> 
+                     <p>How to implement and use the bootstrap framework as well as the importance of communication and planning within a design and development.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+   </section>
+    <!-- Education and Experience -->
+    <section>
+       <div class="container py-4">
+         <div class="row">
+           <div class="col">
+             <h2 class="text-center">Education</h2>
+             <hr />
+           </div>  
+           <div class="col"> 
+             <h2 class="text-center">Experience</h2>
+             <hr />
+           </div>  
+         </div>
+         
+         <div class="row">
+           <div class="col">
+               <ol class="list-group list-group-numbered">
+                 <li class="list-group-item d-flex justify-content-between align-items-start">
+                   <div class="ms-2 me-auto">
+                     <div class="fw-bold">B.S. Networking</div>
+                     UWSP
+                   </div>
+                 </li>
+                 <li class="list-group-item d-flex justify-content-between align-items-start">
+                   <div class="ms-2 me-auto">
+                     <div class="fw-bold">Engineering Operations</div>
+                     AWS - Certificate
+                   </div>
+                 </li>
+                 <li class="list-group-item d-flex justify-content-between align-items-start">
+                   <div class="ms-2 me-auto">
+                     <div class="fw-bold">Cloud Engineering</div>
+                     AWS - Certificate
+                   </div>
+           </div>
+           <div class="col">
+               <ol class="list-group list-group-numbered">
+                 <li class="list-group-item d-flex justify-content-between align-items-start">
+                   <div class="ms-2 me-auto">
+                     <div class="fw-bold">EUC Hardware Technician</div>
+                     Aspirus: 6/2021 - Present
+                   </div>
+                 </li>
+                 <li class="list-group-item d-flex justify-content-between align-items-start">
+                   <div class="ms-2 me-auto">
+                     <div class="fw-bold">Workstation support</div>
+                     UWSP: 2 Years
+                   </div>
+                 </li>
+                 <li class="list-group-item d-flex justify-content-between align-items-start">
+                   <div class="ms-2 me-auto">
+                     <div class="fw-bold">IT Service Desk Lead</div>
+                     UWSP: 3 Years
+                   </div>
+                 </li>
+               </ol>
+           </div>
+         </div>
+       </div>
+    </section>
+    <!--PLACE SCRIPTS-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+    <!-- Footer -->
+<footer class="bg-dark text-center text-white py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>About Me</h4>
+                <p>I am always open to opportunities to enhance my skill set! Contact me with a offer or idea.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Contact Me</h4>
+                <p>Email: jkolodzik@yahoo.com<br>Phone: +1 847 770 8668<br>Address: 815 Commons Circle Apt 2, Plover, Wi 54467</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Follow Me</h4>
+                <div>
+                    <a href="https://www.linkedin.com/in/joseph-kolodzik"><img class="Media" src="Images/MediaButtons/LinkedIn.png" style="width: 15%" alt="LinkedIn"></a>
+                    <a class="Media" href="https://github.com/OnyxJungle"><img src="Images/MediaButtons/GitHub.png" style="width: 15%" alt="GitHub"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>   
+</footer>
