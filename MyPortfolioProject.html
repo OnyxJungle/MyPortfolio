@@ -22,7 +22,7 @@
 </head>
 <body>
 	<!-- Navigation bar -->
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark p-2">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark p-4 pb-2 pt-2">
 		<a class="navbar-brand" href="#">Joe Kolodzik's Portfolio</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
 			<span class="navbar-toggler-icon"></span>
@@ -47,9 +47,9 @@
 		<div class="container">
 			<div class="row">
          	<div class="col-2">
-					<img src="Images/Profilephoto.jpg" class="rounded-circle" style="width: 100%" alt="Profile Image">
+					<img src="Images/Profilephoto.jpg" class="rounded-circle" style="width: 90%" alt="Profile Image">
 				</div>
-				<div class="col-7">
+				<div class="col">
 					<h2>Joe Kolodzik</h2>
 					<p>I an technology enthusiast a interest in networking, programming, web design, web development, UX/UI design, and project management. I am
                   employed by Aspirus Inc as a end user computing technician. In my free time I enjoy going to the beach,
@@ -78,34 +78,34 @@
                   <img class="card-img-top" src="Images/PeopleHelpingPeople.jpg" alt="Project Image">
                   <div class="card-body">
                      <h5 class="card-title">People Helping People</h5>
-                     <p class="card-text">Functional Prototype for volunteering.</p>
+                     <p class="card-text">Functional Prototype for volunteering</p>
                   </div>
                </div>
             </div>
             <div class="col-md-4">
-               <div class="card mb-4">
+               <div class="card mb-4" data-bs-toggle="modal" data-bs-target="#CNMT210">
                   <img class="card-img-top" src="Images/CNMT210Final.jpg" alt="Project Image">
                   <div class="card-body">
                      <h5 class="card-title">CNMT210 Final</h5>
-                     <p class="card-text">HTML and CSS final assignment.</p>
+                     <p class="card-text">HTML and CSS final assignment</p>
                   </div>
                </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-bs-toggle="modal" data-bs-target="#MySite">
                <div class="card mb-4">
                   <img class="card-img-top" src="Images/Portfolio.jpg" alt="Project Image">
                   <div class="card-body">
                      <h5 class="card-title">My Portfolio</h5>
-                     <p class="card-text">Personal WebPage Built with Bootstrap.</p>
+                     <p class="card-text">My Personal WebPage</p>
                   </div>
                </div>
             </div>
-            <!-- Modal -->
+            <!-- Modal 1-->
             <div class="modal fade" id="phpmodal" style="display: none;" tabindex="-1" aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="Card1">People Helping People</h5>
+                    <h5 class="modal-title" id="phpmodal">People Helping People</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
@@ -130,6 +130,43 @@
                 </div>
               </div>
             </div>
+            <!-- Modal 2-->
+            <div class="modal fade" id="CNMT210" style="display: none;" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="CNMT210">CNMT210 Final</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <h6>Context</h6>
+                     <p>For this Project I was given a colour pallet and a list of requirements: Header, Nav, social media, Carousel, etc. and had 2 hours
+                     to build a web page using only CSS and HTML that utilized all the requirements.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 3-->
+            <div class="modal fade" id="MySite" style="display: none;" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="MySite">My Portfolio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <h6>Context</h6>
+                     <p>My personal website that I built in bootstrap for practice and to further understand the scope and limitations of the framework.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
          </div>
       </div>
    </section>
@@ -138,18 +175,18 @@
        <div class="container py-4">
          <div class="row">
            <div class="col">
-             <h2 class="text-center">Education</h2>
+             <h2>Education</h2>
              <hr />
            </div>  
            <div class="col"> 
-             <h2 class="text-center">Experience</h2>
+             <h2 class="">Experience</h2>
              <hr />
            </div>  
          </div>
          
          <div class="row">
            <div class="col">
-               <ol class="list-group list-group-numbered">
+               <ol class="list-group list-group-numbered list-group-flush">
                  <li class="list-group-item d-flex justify-content-between align-items-start">
                    <div class="ms-2 me-auto">
                      <div class="fw-bold">B.S. Networking</div>
@@ -169,26 +206,53 @@
                    </div>
            </div>
            <div class="col">
-               <ol class="list-group list-group-numbered">
-                 <li class="list-group-item d-flex justify-content-between align-items-start">
-                   <div class="ms-2 me-auto">
-                     <div class="fw-bold">EUC Hardware Technician</div>
-                     Aspirus: 6/2021 - Present
+               <div class="accordion accordion-flush" id="accordionFlushExample">
+                 <div class="accordion-item">
+                   <h2 class="accordion-header" id="flush-headingOne">
+                     <button class="accordion-button collapsed p-3 pt-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                       <div>
+                       <div class="fw-bold">EUC Hardware Technician</div>
+                       <div class="fw-light">Aspirus: 6/2021 - Present</div> 
+                       </div>
+                     </button>
+                   </h2>
+                   <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne">
+                     <div class="accordion-body">
+                     Placeholder content
+                     </div>
                    </div>
-                 </li>
-                 <li class="list-group-item d-flex justify-content-between align-items-start">
-                   <div class="ms-2 me-auto">
-                     <div class="fw-bold">Workstation support</div>
-                     UWSP: 2 Years
+                 </div>
+                 <div class="accordion-item">
+                   <h2 class="accordion-header" id="flush-headingTwo">
+                     <button class="accordion-button collapsed p-3 pt-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                       <div>
+                       <div class="fw-bold">Workstation Support</div>
+                       <div class="fw-light">UWSP: 2 Years</div> 
+                       </div>
+                     </button>
+                   </h2>
+                   <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo">
+                     <div class="accordion-body">
+                     Placeholder content
+                     </div>
                    </div>
-                 </li>
-                 <li class="list-group-item d-flex justify-content-between align-items-start">
-                   <div class="ms-2 me-auto">
-                     <div class="fw-bold">IT Service Desk Lead</div>
-                     UWSP: 3 Years
+                 </div>
+                 <div class="accordion-item">
+                   <h2 class="accordion-header" id="flush-headingThree">
+                     <button class="accordion-button collapsed p-3 pt-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseOne">
+                       <div>
+                       <div class="fw-bold">IT Service Desk Lead</div>
+                       <div class="fw-light">UWSP: 3 Years</div> 
+                       </div>
+                     </button>
+                   </h2>
+                   <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree">
+                     <div class="accordion-body">
+                     Placeholder content
+                     </div>
                    </div>
-                 </li>
-               </ol>
+                 </div>
+               </div>
            </div>
          </div>
        </div>
