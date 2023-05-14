@@ -22,7 +22,7 @@
 </head>
 <body>
 	<!-- Navigation bar -->
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark p-4 pb-2 pt-2">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark p-4 pb-2 pt-2 fixed-top">
 		<a class="navbar-brand" href="#">Joe Kolodzik's Portfolio</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
 			<span class="navbar-toggler-icon"></span>
@@ -36,15 +36,15 @@
 					<a class="nav-link" href="#projects">Projects</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
+					<a class="nav-link" href="#E&E">E & E</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 
 	<!-- About section -->
-	<section id="about" class="py-4">
-		<div class="container">
+	<section id="about" class="py-4 pt-5">
+		<div class="container pt-4">
 			<div class="row">
          	<div class="col-2">
 					<img src="Images/Profilephoto.jpg" class="rounded-circle" style="width: 90%" alt="Profile Image">
@@ -73,12 +73,13 @@
          <h2 class="mb-3">My Projects</h2>
          <div class="row">
             <div class="col-md-4">
-               <div class="card mb-4" data-bs-toggle="modal" data-bs-target="#phpmodal">
+               <div class="card mb-4">
                   <!-- Card Front -->
                   <img class="card-img-top" src="Images/PeopleHelpingPeople.jpg" alt="Project Image">
                   <div class="card-body">
                      <h5 class="card-title">People Helping People</h5>
                      <p class="card-text">Functional Prototype for volunteering</p>
+                     <a href="WD302.html" class="btn btn-primary">Learn more</a>
                   </div>
                </div>
             </div>
@@ -88,6 +89,7 @@
                   <div class="card-body">
                      <h5 class="card-title">CNMT210 Final</h5>
                      <p class="card-text">HTML and CSS final assignment</p>
+                     <a href="#" class="btn btn-primary">Learn more</a>
                   </div>
                </div>
             </div>
@@ -97,6 +99,7 @@
                   <div class="card-body">
                      <h5 class="card-title">My Portfolio</h5>
                      <p class="card-text">My Personal WebPage</p>
+                     <a href="#" class="btn btn-primary">Learn more</a>
                   </div>
                </div>
             </div>
@@ -171,7 +174,7 @@
       </div>
    </section>
     <!-- Education and Experience -->
-    <section>
+    <section id="E&E">
        <div class="container py-4">
          <div class="row">
            <div class="col">
